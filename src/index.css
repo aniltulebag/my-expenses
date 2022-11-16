@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE STYLES */
+.App {
+  @apply min-h-screen;
+}
+
+.btn {
+  @apply border-2 border-green-600 text-green-600 py-2 px-4 rounded-md font-bold hover:text-white hover:bg-green-600 transition-colors;
+}
+
+.spinner {
+  @apply fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}
+
+/* MAIN NAVIGATION */
+.navbar {
+  @apply bg-slate-200 py-5 px-6;
+}
+
+.navbar ul {
+  @apply flex items-center;
+}
+
+.title {
+  @apply mr-auto font-bold text-xl;
+}
+
+.navbar button,
+.navbar a {
+  @apply ml-4;
+}
+
+/* HOME PAGE */
+.main-container {
+  @apply my-16 mx-auto max-w-4xl sm:grid sm:grid-cols-3;
+}
+
+.content {
+  @apply w-2/3 mx-auto sm:mx-0 sm:w-full sm:col-span-2 sm:pr-8;
+}
+
+.sidebar {
+  @apply text-center w-3/4 mx-auto sm:pl-8 sm:w-full sm:mx-0;
+}
+
+.sidebar h3 {
+  @apply text-green-600 mb-5;
+}
+
+.sidebar form {
+  @apply p-5 bg-green-600;
+}
+
+.sidebar label {
+  @apply block text-white mb-5 text-left;
+}
+
+.sidebar input {
+  @apply block w-full p-2 mt-2 rounded-sm text-gray-600;
+}
+
+.sidebar button {
+  @apply block text-white border-2 border-white bg-transparent py-2 px-4 rounded-md w-full hover:text-green-600 hover:bg-white duration-300;
+}
+
+.expenses li {
+  @apply my-8 p-5 border border-l-4 border-l-green-600 shadow-md flex items-center relative overflow-hidden;
+}
+
+.expenses .name {
+  @apply text-gray-700 text-sm;
+}
+
+.expenses .amount {
+  @apply ml-auto mr-10 text-gray-700 font-bold;
+}
+
+.expenses button {
+  @apply absolute top-0 right-0 bg-gray-200 text-gray-700 border-none py-3 px-2 text-center leading-[0] text-[1rem];
+}
+
+/* LOGIN FORM */
+.login-form {
+  @apply my-16 p-5 max-w-sm mx-auto;
+}
+
+.login-form h2 {
+  @apply text-center uppercase;
+}
+
+.login-form label {
+  @apply block my-8;
+}
+
+.login-form span {
+  @apply block mb-2;
+}
+
+.login-form input {
+  @apply block py-2 px-1 w-[100%] bg-slate-100;
+}
+
+/* SIGNUP FORM */
+.signup-form {
+  @apply my-16 p-5 max-w-sm mx-auto;
+}
+
+.signup-form h2 {
+  @apply text-center uppercase;
+}
+
+.signup-form label {
+  @apply block my-8;
+}
+
+.signup-form span {
+  @apply block mb-2;
+}
+
+.signup-form input {
+  @apply block py-2 px-1 w-[100%] bg-slate-100;
+}
