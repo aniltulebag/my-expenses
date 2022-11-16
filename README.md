@@ -33,7 +33,7 @@ Password: 12345678
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/aniltulebag/my-expenses.git
 ```
 
 Go to the project directory
