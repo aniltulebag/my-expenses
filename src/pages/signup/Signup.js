@@ -35,6 +35,15 @@ const Signup = () => {
       return;
     }
 
+    if (
+      !(enteredPassword.length >= 6) ||
+      !(enteredConfirmPassword.length >= 6)
+    ) {
+      // alert
+      notify('Password length must be greater than or equal to 6');
+      return;
+    }
+
     if (enteredPassword !== enteredConfirmPassword) {
       // alert
       notify('Passwords do not match!');
